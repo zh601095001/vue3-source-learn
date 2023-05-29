@@ -332,7 +332,7 @@ function baseCreateRenderer(
   }
 
   const target = getGlobalThis()
-  target.__VUE__ = true
+  target.__VUE__ = true // 方便devtools识别
   if (__DEV__ || __FEATURE_PROD_DEVTOOLS__) {
     setDevtoolsHook(target.__VUE_DEVTOOLS_GLOBAL_HOOK__, target)
   }
